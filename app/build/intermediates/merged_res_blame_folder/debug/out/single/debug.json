@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/layout_activity_login.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/layout_activity_date.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/layout/activity_date.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/layout_activity_summary.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/layout/activity_summary.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/drawable_summary_card_bg.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/drawable/summary_card_bg.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/layout_activity_destination.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/layout/activity_destination.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/layout_activity_budget.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/layout/activity_budget.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/drawable_tp_logo.png.flat",
+        "source": "com.example.travelplanner.app-main-30:/drawable/tp_logo.png"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/drawable_edittext_bg.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/drawable/edittext_bg.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.travelplanner.app-main-30:/mipmap-hdpi/ic_launcher.webp"
+    }
+]
