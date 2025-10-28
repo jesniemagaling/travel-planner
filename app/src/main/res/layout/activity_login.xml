@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
+    android:background="@color/bg_light">
 
     <LinearLayout
         android:orientation="vertical"
@@ -11,61 +11,82 @@
         android:padding="32dp"
         android:gravity="center_horizontal">
 
-        <!-- Logo Section -->
+        <!-- Logo -->
         <ImageView
             android:id="@+id/logoImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="20dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="16dp"
             android:src="@drawable/tp_logo"
-            android:contentDescription="Travel Planner Logo"
+            android:contentDescription="@string/travel_planner_logo"
             android:adjustViewBounds="true" />
 
-        <!-- Title -->
+        <!-- App Title -->
         <TextView
             android:id="@+id/titleLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Travel Planner"
-            android:textSize="28sp"
+            android:text="@string/travel_planner_title"
+            android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="@color/textPrimary"
-            android:layout_marginBottom="32dp" />
+            android:letterSpacing="0.03"
+            android:layout_marginBottom="40dp" />
 
-        <!-- Name Input -->
-        <EditText
-            android:id="@+id/nameInput"
+        <!-- Card for Inputs -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
-            android:inputType="textPersonName"
-            android:padding="14dp"
-            android:background="@drawable/edittext_bg"
-            android:layout_marginBottom="16dp" />
+            android:background="@drawable/rounded_white_card"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:elevation="4dp">
 
-        <!-- Email Input -->
-        <EditText
-            android:id="@+id/emailInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email Address"
-            android:inputType="textEmailAddress"
-            android:padding="14dp"
-            android:background="@drawable/edittext_bg"
-            android:layout_marginBottom="28dp" />
+            <!-- Name Input -->
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:padding="14dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_marginBottom="16dp" />
 
-        <!-- Next Button -->
-        <Button
-            android:id="@+id/btnNext"
-            android:layout_width="match_parent"
+            <!-- Email Input -->
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Continue Button -->
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_button"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Footer Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:elevation="4dp"
-            android:padding="14dp" />
+            android:text="@string/tagline"
+            android:textColor="@color/textSecondary"
+            android:textSize="14sp"
+            android:layout_marginTop="24dp"
+            android:alpha="0.9" />
 
     </LinearLayout>
 </ScrollView>

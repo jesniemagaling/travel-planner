@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BudgetActivity extends AppCompatActivity {
     EditText budgetInput;
     Button btnNext;
+    ImageView btnBack;
 
     String name, email, destination, startDate, endDate;
 
@@ -21,6 +23,7 @@ public class BudgetActivity extends AppCompatActivity {
 
         budgetInput = findViewById(R.id.budgetInput);
         btnNext = findViewById(R.id.btnNext);
+        btnBack = findViewById(R.id.btnBack);
 
         Intent i = getIntent();
         name = i.getStringExtra("name");
@@ -44,6 +47,12 @@ public class BudgetActivity extends AppCompatActivity {
             intent.putExtra("endDate", endDate);
             intent.putExtra("budget", budget);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        });
+
+        btnBack.setOnClickListener(v -> {
+            onBackPressed();
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         });
     }
 }

@@ -3,4 +3,10 @@
     <string name="next">Next</string>
     <string name="view_summary">View Summary</string>
     <string name="finish">Finish</string>
+    <string name="travel_planner_title">Travel Planner</string>
+    <string name="travel_planner_logo">Travel Planner Logo</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="continue_button">Continue</string>
+    <string name="tagline">Plan your journey smartly and easily</string>
 </resources>

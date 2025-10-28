@@ -1,50 +1,67 @@
 package com.example.travelplanner;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.CalendarView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Locale;
 
 public class DateActivity extends AppCompatActivity {
-    EditText startDateInput, endDateInput;
-    Button btnNext;
 
+    CalendarView calendarView;
+    Button btnNextDate;
+    ImageView btnBack;
     String name, email, destination;
-
-    final Calendar startCal = Calendar.getInstance();
-    final Calendar endCal = Calendar.getInstance();
-    final SimpleDateFormat sdf = new SimpleDateFormat("MMM d, yyyy", Locale.getDefault());
+    String startDate = "", endDate = "";
+    boolean isStartDateSelected = false; // to track first and second click
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date);
 
-        startDateInput = findViewById(R.id.startDateInput);
-        endDateInput = findViewById(R.id.endDateInput);
-        btnNext = findViewById(R.id.btnNext);
+        calendarView = findViewById(R.id.calendarView);
+        btnNextDate = findViewById(R.id.btnNextDate);
+        btnBack = findViewById(R.id.btnBack);
 
+        // Get data from previous screen
         Intent i = getIntent();
         name = i.getStringExtra("name");
         email = i.getStringExtra("email");
         destination = i.getStringExtra("destination");
 
-        startDateInput.setOnClickListener(v -> showDatePicker(startCal, startDateInput));
-        endDateInput.setOnClickListener(v -> showDatePicker(endCal, endDateInput));
+        // Handle date selection
+        calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
+            String chosenDate = (month + 1) + "/" + dayOfMonth + "/" + year;
 
-        btnNext.setOnClickListener(v -> {
-            String start = startDateInput.getText().toString().trim();
-            String end = endDateInput.getText().toString().trim();
-            if (start.isEmpty() || end.isEmpty()) {
-                Toast.makeText(this, "Please select both dates", Toast.LENGTH_SHORT).show();
+            if (!isStartDateSelected) {
+                startDate = chosenDate;
+                endDate = ""; // clear old end date
+                isStartDateSelected = true;
+                Toast.makeText(this, "Start date set: " + startDate, Toast.LENGTH_SHORT).show();
+            } else {
+                endDate = chosenDate;
+                isStartDateSelected = false;
+                Toast.makeText(this, "End date set: " + endDate, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Back button
+        btnBack.setOnClickListener(v -> {
+            onBackPressed();
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        });
+
+        // Next button
+        btnNextDate.setOnClickListener(v -> {
+            if (startDate.isEmpty() || endDate.isEmpty()) {
+                Toast.makeText(this, "Please select both start and end dates", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -52,24 +69,10 @@ public class DateActivity extends AppCompatActivity {
             intent.putExtra("name", name);
             intent.putExtra("email", email);
             intent.putExtra("destination", destination);
-            intent.putExtra("startDate", start);
-            intent.putExtra("endDate", end);
+            intent.putExtra("startDate", startDate);
+            intent.putExtra("endDate", endDate);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });
-    }
-
-    private void showDatePicker(final Calendar cal, final EditText target) {
-        int y = cal.get(Calendar.YEAR);
-        int m = cal.get(Calendar.MONTH);
-        int d = cal.get(Calendar.DAY_OF_MONTH);
-
-        DatePickerDialog dpd = new DatePickerDialog(this, (view, year, month, dayOfMonth) -> {
-            cal.set(Calendar.YEAR, year);
-            cal.set(Calendar.MONTH, month);
-            cal.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-            target.setText(sdf.format(cal.getTime()));
-        }, y, m, d);
-
-        dpd.show();
     }
 }

@@ -5,4 +5,15 @@
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
+    <style name="CalendarWeekText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CalendarDateText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>

@@ -1,74 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="24dp">
 
+    <!-- Top Bar with Back Button -->
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="32dp"
-        android:gravity="center_horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-        <!-- Logo -->
         <ImageView
-            android:id="@+id/logoImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/tp_logo"
-            android:contentDescription="Travel Planner Logo" />
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:padding="6dp" />
 
-        <!-- Title -->
         <TextView
-            android:id="@+id/titleDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Travel Dates"
-            android:textSize="22sp"
+            android:text="Step 3"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When will this journey start?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Determine when and how long you will travel for proper planning"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Date Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_card"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
             android:textStyle="bold"
             android:textColor="@color/textPrimary"
-            android:layout_marginBottom="28dp" />
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
 
-        <!-- Start Date -->
-        <EditText
-            android:id="@+id/startDateInput"
+        <CalendarView
+            android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:focusable="false"
-            android:hint="Start Date"
-            android:padding="14dp"
-            android:background="@drawable/edittext_bg"
-            android:drawableStart="@android:drawable/ic_menu_my_calendar"
-            android:drawablePadding="10dp"
-            android:layout_marginBottom="16dp" />
-
-        <!-- End Date -->
-        <EditText
-            android:id="@+id/endDateInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="false"
-            android:hint="End Date"
-            android:padding="14dp"
-            android:background="@drawable/edittext_bg"
-            android:drawableStart="@android:drawable/ic_menu_my_calendar"
-            android:drawablePadding="10dp"
-            android:layout_marginBottom="32dp" />
-
-        <!-- Next Button -->
-        <Button
-            android:id="@+id/btnNext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Next"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:elevation="4dp"
-            android:padding="14dp" />
-
+            android:weekDayTextAppearance="@style/CalendarWeekText"
+            android:dateTextAppearance="@style/CalendarDateText"
+            android:firstDayOfWeek="2"
+            android:focusedMonthDateColor="@color/teal_green"
+            android:selectedWeekBackgroundColor="@color/teal_green"
+            android:layout_marginBottom="8dp" />
     </LinearLayout>
-</ScrollView>
+
+    <!-- Next Step Button -->
+    <Button
+        android:id="@+id/btnNextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Step"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="28dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

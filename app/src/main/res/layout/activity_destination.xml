@@ -1,38 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="24dp">
 
+    <!-- Top Bar with Back Button -->
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="32dp"
-        android:gravity="center_horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-        <!-- Optional: TP Logo for visual consistency -->
         <ImageView
-            android:id="@+id/logoImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/tp_logo"
-            android:contentDescription="Travel Planner Logo" />
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:padding="6dp" />
 
-        <!-- Title -->
         <TextView
-            android:id="@+id/titleDestination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose Your Destination"
-            android:textSize="22sp"
+            android:text="Step 2"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where will your journey take you?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your dream destination to start planning your trip"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Destination Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_card"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination"
             android:textStyle="bold"
             android:textColor="@color/textPrimary"
-            android:layout_marginBottom="24dp" />
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
 
-        <!-- Input Field -->
         <EditText
             android:id="@+id/destinationInput"
             android:layout_width="match_parent"
@@ -40,21 +78,19 @@
             android:hint="City, Country (e.g., Cebu, Philippines)"
             android:inputType="textCapWords"
             android:padding="14dp"
-            android:background="@drawable/edittext_bg"
-            android:layout_marginBottom="28dp" />
-
-        <!-- Next Button -->
-        <Button
-            android:id="@+id/btnNext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Next"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:elevation="4dp"
-            android:padding="14dp"
-            android:layout_marginBottom="32dp" />
-
+            android:background="@drawable/edittext_bg" />
     </LinearLayout>
-</ScrollView>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Step"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

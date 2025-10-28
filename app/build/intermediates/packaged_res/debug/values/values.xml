@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="apple_green">#4CB944</color>
     <color name="bg">#F6F8FA</color>
+    <color name="bg_light">#F5F7FA</color>
     <color name="black">#000000</color>
+    <color name="dark_teal">#20756B</color>
     <color name="gray">#808080</color>
-    <color name="purple_500">#7C4DFF</color>
-    <color name="purple_700">#5E35B1</color>
-    <color name="teal_200">#03DAC5</color>
+    <color name="purple_500">#2CA58D</color>
+    <color name="purple_700">#20756B</color>
+    <color name="teal_green">#2CA58D</color>
     <color name="textPrimary">#1E1E1E</color>
+    <color name="textSecondary">#4F4F4F</color>
     <color name="white">#FFFFFF</color>
     <string name="app_name">Travel Planner</string>
+    <string name="continue_button">Continue</string>
+    <string name="email_address">Email Address</string>
     <string name="finish">Finish</string>
+    <string name="full_name">Full Name</string>
     <string name="next">Next</string>
+    <string name="tagline">Plan your journey smartly and easily</string>
+    <string name="travel_planner_logo">Travel Planner Logo</string>
+    <string name="travel_planner_title">Travel Planner</string>
     <string name="view_summary">View Summary</string>
+    <style name="CalendarDateText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="CalendarWeekText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+    </style>
     <style name="Theme.TravelPlanner" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
