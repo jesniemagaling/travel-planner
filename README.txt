@@ -3,7 +3,7 @@
 
 This is a complete Android Studio Java project for a 5-screen Travel Planner app.
 
-## 🚀 Quick Start
+## Quick Start
 1. Unzip this project.
 2. Open Android Studio → **File → Open** → select the unzipped folder.
 3. When prompted, let Android Studio download Gradle if necessary.
@@ -30,7 +30,7 @@ Once done, you can run commands like:
 ```
 or simply **Build & Run** from Android Studio.
 
-✅ The app has:
+The app has:
 - Login screen (user info)
 - Destination screen
 - Date picker screen
