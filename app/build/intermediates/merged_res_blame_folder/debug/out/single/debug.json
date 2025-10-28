@@ -4,20 +4,20 @@
         "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\layout_activity_budget.xml.flat",
         "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\layout\\activity_budget.xml"
     },
     {
-        "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\drawable_edittext_bg.xml.flat",
-        "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\drawable\\edittext_bg.xml"
+        "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\drawable_edittext_bg.xml.flat",
+        "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\drawable\\edittext_bg.xml"
     },
     {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\drawable_ic_launcher_background.xml.flat",
@@ -38,6 +38,10 @@
     {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\layout_activity_destination.xml.flat",
         "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\layout\\activity_destination.xml"
+    },
+    {
+        "merged": "com.example.travelplanner.app-merged_res-28:/layout_activity_summary.xml.flat",
+        "source": "com.example.travelplanner.app-main-30:/layout/activity_summary.xml"
     },
     {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
@@ -68,16 +72,12 @@
         "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\drawable\\rounded_button.xml"
     },
     {
-        "merged": "com.example.travelplanner.app-merged_res-28:/drawable_rounded_white_card.xml.flat",
-        "source": "com.example.travelplanner.app-main-30:/drawable/rounded_white_card.xml"
+        "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\drawable_ic_arrow_back.png.flat",
         "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\drawable\\ic_arrow_back.png"
-    },
-    {
-        "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-main-30:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\jesni\\.gradle\\daemon\\8.7\\com.example.travelplanner.app-merged_res-28:\\drawable_tp_logo.png.flat",

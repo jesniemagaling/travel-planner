@@ -1,9 +1,9 @@
 <resources>
     <color name="apple_green">#4CB944</color>
-    <color name="teal_green">#2CA58D</color>
+    <color name="teal_green">#1ABC9C</color>
     <color name="dark_teal">#20756B</color>
 
-    <color name="purple_500">#2CA58D</color>
+    <color name="purple_500">#1ABC9C</color>
     <color name="purple_700">#20756B</color>
 
     <color name="white">#FFFFFF</color>

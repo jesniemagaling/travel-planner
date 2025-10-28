@@ -8,7 +8,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
+        android:padding="32dp"
         android:gravity="center_horizontal">
 
         <!-- Top Bar with Back Button -->
@@ -16,15 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
 
             <ImageView
                 android:id="@+id/btnBack"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/ic_arrow_back"
-                android:contentDescription="Back"
-                android:padding="6dp" />
+                android:contentDescription="Back"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,8 +32,7 @@
                 android:text="Step 5"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="@color/textPrimary"
-                android:layout_marginStart="12dp" />
+                android:textColor="@color/textPrimary"/>
         </LinearLayout>
 
         <!-- Travel Planner Logo -->

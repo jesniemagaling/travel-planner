@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/bg"
-    android:padding="24dp">
+    android:padding="32dp">
 
     <!-- Top Bar with Back Button -->
     <LinearLayout
@@ -15,11 +15,11 @@
 
         <ImageView
             android:id="@+id/btnBack"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/ic_arrow_back"
             android:contentDescription="Back"
-            android:padding="6dp" />
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,8 +27,7 @@
             android:text="Step 3"
             android:textStyle="bold"
             android:textSize="16sp"
-            android:textColor="@color/textPrimary"
-            android:layout_marginStart="12dp" />
+            android:textColor="@color/textPrimary"/>
     </LinearLayout>
 
     <!-- Title -->
